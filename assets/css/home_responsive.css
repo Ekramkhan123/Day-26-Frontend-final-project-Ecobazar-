@@ -1,0 +1,22 @@
+@media (max-width: 992px){
+    header{
+        display: none;
+    }
+
+    #second_heading .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    #second_heading .container .mobile_menubar{
+        display: flex;
+        align-items: center;
+        line-height: 0;
+    }
+    .offcanvas{
+        max-width: 350px;
+        width: 100%;
+        background-color: #d7e7d7;
+    }
+}
