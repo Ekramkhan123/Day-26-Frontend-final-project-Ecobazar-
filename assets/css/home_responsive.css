@@ -9,14 +9,78 @@
         align-items: center;
         padding: 15px;
     }
+
     #second_heading .container .mobile_menubar{
         display: flex;
         align-items: center;
         line-height: 0;
     }
-    .offcanvas{
+
+    #offcanvasExample{
         max-width: 350px;
         width: 100%;
         background-color: #d7e7d7;
+    }
+
+    .mobile_menubar span{
+        cursor: pointer;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .mobile_menubar span:hover{
+        background-color: #00B207;
+        color: whitesmoke;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    .offcanvas .mobile_toggle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        margin: 5px 0;
+        color: #000;
+    }
+
+    .offcanvas .mobile_toggle:hover{
+        background-color: #00B207;
+        color: white;
+    }
+
+    .dropdown-toggle::after{
+        display: none;
+    }
+
+    .offcanvas-header .btn-close{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 50%;
+        padding: 3px;
+    }
+
+    .offcanvas-header .btn-close:hover{
+        background-color: whitesmoke;
+        transform: scale(1.2);
+        border: none;
+    }
+
+    .offcanvas .dropdown-menu{
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: #d7e7d7;
+    }
+
+    .offcanvas .dropdown-menu a:hover{
+        background-color: #00B207;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .offcanvas .dropdown-menu a{
+        padding: 10px;
     }
 }
