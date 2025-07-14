@@ -19,12 +19,13 @@
     #offcanvasExample{
         max-width: 350px;
         width: 100%;
-        background-color: #d7e7d7;
+        background: transparent;
+        backdrop-filter: blur(10px);
     }
 
     .mobile_menubar span{
         cursor: pointer;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .mobile_menubar span:hover{
@@ -39,25 +40,35 @@
         justify-content: space-between;
         align-items: center;
         padding: 12px 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
         border-radius: 10px;
         margin: 5px 0;
-        color: #000;
+        font-weight: bolder;
+        color: black;
+        background-color: rgba(245, 245, 245, 0.408);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .offcanvas .mobile_toggle:hover{
         background-color: #00B207;
-        color: white;
     }
 
     .dropdown-toggle::after{
         display: none;
     }
 
+    .offcanvas-header img{
+        background-color: rgba(245, 245, 245, 0.408);
+        padding: 10px;
+        border-radius: 10%;
+        box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+    }
+
     .offcanvas-header .btn-close{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
         border-radius: 50%;
         padding: 3px;
+        background-color: rgba(245, 245, 245, 0.71);
     }
 
     .offcanvas-header .btn-close:hover{
@@ -70,17 +81,95 @@
         width: 100%;
         margin: 0;
         border-radius: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        background-color: #d7e7d7;
+        box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+        background-color: rgba(245, 245, 245, 0.912);
+    }
+
+    .offcanvas .dropdown-menu a{
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .offcanvas .dropdown-menu a:hover{
         background-color: #00B207;
         border-radius: 10px;
         color: white;
+        font-weight: bold;
     }
 
     .offcanvas .dropdown-menu a{
         padding: 10px;
     }
+
+    #banner .container {
+        z-index: -23 !important;
+    }
+
+    #banner .slider .offer {
+        left: 85%;
+        top: 0%;
+        z-index: 55 !important;
+        width: 80px;
+        height: 80px;
+    }
+
+    #banner .offer h3{
+        font-size: 28px;
+    }
+
+    #banner .offer p{
+        font-size: 12px;
+    }
+
+    #banner .contains {
+        text-align: center;
+    }
+
+    #banner .contains h2 {
+        font-size: 40px;
+    }
+
+    #banner .contains p {
+        font-size: 14px;
+    }
+
+    #banner .contains a{
+        margin-bottom: 20px;
+    }
+
+    #banner .next{
+        right: -.5%;
+        top: -.5%;
+        backdrop-filter: blur(5px);
+        background-color: transparent;
+    }
+
+    #banner .next:hover{
+        background-color: #00B207;
+        color: whitesmoke;
+        backdrop-filter: blur(0px);
+    }
+
+    #banner .prev{
+        left: -2%;
+        top: -2%; 
+        backdrop-filter: blur(5px);
+        background-color: transparent;
+        position: unset;
+    }
+
+    #banner .prev:hover{
+        background-color: #00B207;
+        color: whitesmoke;
+        backdrop-filter: blur(0px);
+    }
+
+    #banner .slick-dots{
+        margin-right: 25px;
+    }
+
+    #banner .slick-dots:hover{
+        transform: scale(1.2);
+    }
+
 }
