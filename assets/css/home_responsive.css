@@ -50,7 +50,7 @@
     }
 
     .offcanvas .mobile_toggle:hover{
-        background-color: #00B207;
+        background-color: #aadbab;
     }
 
     .dropdown-toggle::after{
@@ -91,7 +91,7 @@
     }
 
     .offcanvas .dropdown-menu a:hover{
-        background-color: #00B207;
+        background-color: #aadbab;
         border-radius: 10px;
         color: white;
         font-weight: bold;
