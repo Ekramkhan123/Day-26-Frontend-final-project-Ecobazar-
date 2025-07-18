@@ -105,7 +105,7 @@
         z-index: -23 !important;
     }
 
-    #banner .slider .offer {
+    #banner .slider .offer{
         left: 85%;
         top: 0%;
         z-index: 55 !important;
@@ -121,15 +121,15 @@
         font-size: 12px;
     }
 
-    #banner .contains {
+    #banner .contains{
         text-align: center;
     }
 
-    #banner .contains h2 {
+    #banner .contains h2{
         font-size: 40px;
     }
 
-    #banner .contains p {
+    #banner .contains p{
         font-size: 14px;
     }
 
@@ -170,6 +170,11 @@
 
     #banner .slick-dots:hover{
         transform: scale(1.2);
+    }
+    
+    #product_slider .heading h4{
+    font-weight: 600;
+    font-size: 28px;
     }
 
 }
