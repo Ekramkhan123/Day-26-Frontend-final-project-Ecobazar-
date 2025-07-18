@@ -395,8 +395,9 @@ header .first_heading_02 .sign a{
     top: 0%;
     height: 100vh;
     transition: 0.5s;
-    position: absolute;
+    position: fixed;
     backdrop-filter: blur(10px);
+    background-color: transparent;
 }
 
 #search form input{
