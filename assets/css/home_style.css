@@ -832,6 +832,7 @@ header .first_heading_02 .sign a{
     backdrop-filter: blur(20px) !important;
     --bs-tooltip-color: black !important;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
     
 }
 
