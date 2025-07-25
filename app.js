@@ -65,4 +65,20 @@ $(function(){
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
     );
 
+    $('.category-button').categoryFilter();
+
+    const countDate = $(".count_down").attr('data-time');
+    $('.count_down').countdown(
+      {
+      date: countDate,
+      },
+       function () {
+        alert('Times up !!!');
+    });
+
+    // jQuery Version
+        $('.venobox').venobox({
+          // settings here
+        });
+
 })
