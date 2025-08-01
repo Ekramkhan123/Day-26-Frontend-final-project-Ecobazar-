@@ -593,6 +593,7 @@ header .first_heading_02 .sign a{
 #product .catagories_content input{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 #product .catagories_content input[type="radio"] {
@@ -754,6 +755,7 @@ input::-webkit-inner-spin-button {
 
 #product .ratings .row{
     padding-left: 5px;
+    cursor: pointer;
 }
 
 #product .ratings .row .col-xl-1 input:checked {
@@ -833,9 +835,10 @@ input::-webkit-inner-spin-button {
     border-radius: 30px;
     padding: 6px 10px;
     background: var(--gray-scale-gray--50);
+    cursor: pointer;
 }
 
-#product .tags span:hover{
+#product .tags .tag_option span:hover{
     background-color: #00B207;
     color: #fff;
 }
@@ -1156,6 +1159,14 @@ input::-webkit-inner-spin-button {
 
 #product .filter:hover .preview_icons li:nth-child(2) a{
     transition-delay: 0.2s;
+}
+
+.custom-tooltip{
+    --bs-tooltip-bg: transparent !important;
+    backdrop-filter: blur(20px) !important;
+    --bs-tooltip-color: black !important;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
 }
 
 #product .page_slider{

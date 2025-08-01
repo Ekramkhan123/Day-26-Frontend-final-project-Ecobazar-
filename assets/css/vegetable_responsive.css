@@ -430,6 +430,11 @@
             padding-left: 5px;
         }
 
+        #product .product_part .filter .preview_icons li a .custom-tooltip{
+            position: absolute !important;
+            background-color: red;
+        }
+
         #product .product_part .pagination{
             display: flex;
             justify-content: center;
