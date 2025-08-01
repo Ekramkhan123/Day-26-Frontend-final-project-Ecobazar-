@@ -102,6 +102,7 @@
         }
 
         #heading_page{  
+            width: 100%;
             padding-top: 10px;
             display: flex;
             justify-content: start;
@@ -111,6 +112,7 @@
 
         #heading_page .breadcrumb {
             padding-left: 40px;
+            padding-top: 20px;
         }
 
         #heading_page .breadcrumb a{
@@ -132,7 +134,7 @@
         }
 
         #product .container{
-            width: 100%;
+            width: 95%;
             padding: 5px;
         }
 
@@ -199,7 +201,7 @@
         }
 
         #product .filter_bar .sidebar .progress .progress_heading h4 span{
-            padding-left: 270px;
+            padding-left: 220px;
         }
 
         #product .progress .progress_bar{
@@ -213,6 +215,10 @@
             justify-content: start;
             align-items: start;
             text-align: start;
+        }
+
+        #product .progress .inputs input{
+            width: 50px !important;
         }
 
         #product .ratings{
@@ -236,7 +242,7 @@
         }
 
         #product .filter_bar .sidebar .rating_heading h4 span{
-            padding-left: 250px;
+            padding-left: 220px;
         }
 
         #product .ratings .row{
@@ -253,7 +259,7 @@
         }
 
         #product .ratings .row .col-xl-6{
-            width: 33%;
+            width: 50%;
         }
 
         #product .ratings .row .col-xl-4{
@@ -268,11 +274,13 @@
         }
 
         #product .filter_bar .sidebar .tags_heading h4{
-            padding-left: 20px;
+            padding-left: 0px;
+            margin-right: 40px;
         }
 
         #product .filter_bar .sidebar .tags_heading h4 span{
-            padding-left: 190px;
+            padding-left: 80px;
+            transform: translateX(60%);
         }
 
         #product .tag_option{
@@ -308,7 +316,7 @@
 
         #product .discount-banner .btn{
             transform: translateY(-20%);
-            transform: translateX(60%);
+            transform: translateX(40%);
         }
 
         #product .sale-products{

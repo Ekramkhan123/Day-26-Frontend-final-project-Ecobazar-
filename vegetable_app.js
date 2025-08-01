@@ -21,12 +21,20 @@ $(function(){
 
     $('.pagination').slick({
     centerMode: false,
-    centerPadding: '0px',
-    slidesToShow: 8,
+    centerPadding: '20px',
+    slidesToShow: 7,
     arrows: true ,
     dot: true,
     nextArrow: `<span class="next"><iconify-icon icon="material-symbols-light:keyboard-arrow-right" width="24" height="24"></iconify-icon></span>`,
     prevArrow: `<span class="prev"><iconify-icon icon="material-symbols-light:keyboard-arrow-left" width="24" height="24"></iconify-icon></span>`,
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+    ]
     });
 
     $('.radio').categoryFilter();
