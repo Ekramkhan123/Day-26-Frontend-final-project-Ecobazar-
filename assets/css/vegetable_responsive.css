@@ -17,18 +17,10 @@
         }
 
         #offcanvasExample{
-        max-width: 420px;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        backdrop-filter: blur(10px);
-        }
-
-        
-        .offcanvas-backdrop.show {
-            opacity: .5;
+            max-width: 350px;
             width: 100%;
-            height: 100%;
+            background: transparent;
+            backdrop-filter: blur(10px);
         }
 
         .mobile_menubar span{
@@ -42,7 +34,6 @@
             border-radius: 5px;
             transform: scale(1.1);
         }
-
 
         .offcanvas .mobile_toggle{
             display: flex;
@@ -88,11 +79,10 @@
 
         .offcanvas .dropdown-menu{
             width: 100%;
-            margin: 0px;
+            margin: 0;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
             background-color: rgba(245, 245, 245, 0.912);
-            margin-left: 10px !important;
         }
 
         .offcanvas .dropdown-menu a{
