@@ -208,9 +208,11 @@
             padding-top: 20px;
         }
 
-        #product .progress .progress_bar .inputs{
-            width: 100%;
-            transform: translateX(-5%);
+        #product .progress .inputs{
+            width: 200px;
+            justify-content: start;
+            align-items: start;
+            text-align: start;
         }
 
         #product .ratings{
