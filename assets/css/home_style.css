@@ -847,6 +847,11 @@ header .first_heading_02 .sign a{
     top: 16px;
     left: 16px;
     border-radius: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #product .filter .offer span{
@@ -1279,6 +1284,11 @@ header .first_heading_02 .sign a{
     top: 16px;
     left: 16px;
     border-radius: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #product_slider .product_child .offer span{
