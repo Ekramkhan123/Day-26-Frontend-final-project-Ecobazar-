@@ -590,17 +590,27 @@ header .first_heading_02 .sign a{
     text-align: center;
 }
 
-#product .catagories_content input{
+#product .catagories_content .catagory{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#product .catagories_content .catagory input{
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
-#product .catagories_content input[type="radio"] {
+#product .catagories_content .catagory input[type="radio"] {
     accent-color: green;
 }
 
-#product .catagories_content span{
+#product .catagories_content .info{
+    padding-top: 13px;
+    text-align: start;
+}
+
+#product .catagories_content .info p{
     padding-left: 10px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -609,18 +619,14 @@ header .first_heading_02 .sign a{
     color: var(--gray-scale-gray--900);
 }
 
-#product .catagories_content span span{
+#product .catagories_content .info p span{
+    padding-left: 10px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-scale-gray--500);
 }
-
-#product .sidebar ul{ 
-    list-style: none; 
-}
-
 
 #product .sidebar .progress{
     padding: 20px;
