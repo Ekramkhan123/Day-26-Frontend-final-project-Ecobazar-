@@ -441,7 +441,7 @@ header .first_heading_02 .sign a{
     left: 3%;
     top: 5%;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -488,6 +488,10 @@ header .first_heading_02 .sign a{
     line-height: 150%;
     color: var(--gray-scale-gray--400);
     text-decoration: none;
+}
+
+#heading_page .breadcrumb a:hover{
+    color: #00B207;
 }
 
 #heading_page .breadcrumb span{
@@ -567,27 +571,59 @@ header .first_heading_02 .sign a{
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product .catagories:hover{
+    background-color: #00B207;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+}
+
+#product .catagories:hover h4{
+    color: #FFFFFF;
+}
+
+#product .catagories:hover h4 span{
+    color: #FFFFFF;
 }
 
 #product .catagories h4{
+    width: 100%;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
-    line-height: 150%;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
 }
 
 #product .catagories h4 span{
-    padding-left: 50px;
+    padding-left: 0px;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+#product .catagories.active h4 span {
+  transform: rotate(180deg);
+}
+
+#product .catagories_content{
+  display: none;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+#product .catagories_content.show{
+    display: block;
 }
 
 #product .catagories_content .catagory{
@@ -628,50 +664,76 @@ header .first_heading_02 .sign a{
     color: var(--gray-scale-gray--500);
 }
 
-#product .sidebar .progress{
-    padding: 20px;
-    width: 250px;
-    height: 200px;
-    display: block;
-    background-color: #fff;
-}
+
 
 #product .progress_heading{
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product .progress_heading:hover{
+    background-color: #00B207;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+}
+
+#product .progress_heading:hover h4{
+    color: #FFFFFF;
+}
+
+#product .progress_heading:hover h4 span{
+    color: #FFFFFF;
 }
 
 #product .progress_heading h4{
-    padding-right: 10px;
+    width: 100%;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
-    line-height: 150%;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
 }
 
 #product .progress_heading h4 span{
-    padding-left: 140px;
+    padding-left: 0px;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
+    display: inline-flex;
+    transition: transform 0.3s ease;
 }
 
-#product .progress .range-slider {
+#product .progress_heading.active h4 span{
+    transform: rotate(180deg);
+}
+
+#product .progress_bar{
+  display: none;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 15px;
+}
+
+#product .progress_bar.show{
+    display: block;
+}
+
+#product .progress_bar .range-slider {
   position: relative;
   width: 90%;
   height: 50px;
-  margin: 0px 0;
+  margin: 0px 10px;
 }
 
-#product .progress .slider-track {
+#product .progress_bar .slider-track {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -681,7 +743,11 @@ header .first_heading_02 .sign a{
   border-radius: 4px;
 }
 
-#product .progress .inputs label{
+#product .progress_bar .inputs{
+    padding: 5px;
+}
+
+#product .progress_bar .inputs label{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -689,24 +755,24 @@ header .first_heading_02 .sign a{
     color: var(--gray-scale-gray--700);
 }
 
-#product .progress .inputs input{
-    width: 30px;
+#product .progress_bar .inputs input{
+    width: 40px;
     text-decoration: none;
     border: none;
     background: transparent;
 }
 
-#product .progress .inputs input:focus {
+#product .progress_bar .inputs input:focus {
   outline: none;
 }
 
-#product .progress .inputs input::-webkit-outer-spin-button,
+#product .progress_bar .inputs input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#product .progress .slider-range {
+#product .progress_bar .slider-range {
   position: absolute;
   top: 50%;
   height: 4px;
@@ -715,7 +781,7 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-#product .progress .slider-handle {
+#product .progress_bar .slider-handle {
   position: absolute;
   top: 50%;
   width: 14px;
@@ -735,50 +801,82 @@ input::-webkit-inner-spin-button {
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product .rating_heading:hover{
+    background-color: #00B207;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+}
+
+#product .rating_heading:hover h4{
+    color: #FFFFFF;
+}
+
+#product .rating_heading:hover h4 span{
+    color: #FFFFFF;
 }
 
 #product .rating_heading h4{
-    padding-right: 10px;
+    width: 100%;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
-    line-height: 150%;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
 }
 
 #product .rating_heading h4 span{
-    padding-left: 140px;
+    padding-left: 0px;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
+    display: inline-flex;
+    transition: transform 0.3s ease;
 }
 
-#product .ratings .row{
+#product .rating_heading.active h4 span{
+    transform: rotate(180deg);
+}
+
+#product .rating_content{
+  display: none;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 15px;
+}
+
+#product .rating_content.show{
+    display: block;
+}
+
+#product .rating_content .row{
     padding-left: 5px;
     cursor: pointer;
 }
 
-#product .ratings .row .col-xl-1 input:checked {
+#product .rating_content .row .col-xl-1 input:checked {
     accent-color: rgb(14, 180, 14);
 }
 
-#product .ratings .col-xl-6{
+#product .rating_content .col-xl-6{
     padding-left: 5%;
     padding-right: 0%;
 }
 
-#product .ratings .col-xl-4{
+#product .rating_content .col-xl-4{
     padding-top: 3px;
     padding-left: 0%;
 }
 
-#product .ratings .col-xl-4 h4{
+#product .rating_content .col-xl-4 h4{
     padding: 1px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -787,51 +885,75 @@ input::-webkit-inner-spin-button {
     color: var(--gray-scale-gray--900);
 }
 
-#product .icons span{
+#product .rating_content .icons span{
     color: #FF8A00;
 }
 
-#product .icons .star{
+#product .rating_content .icons .star{
     color: #CCCCCC;
-}
-
-#product .tags{
-    padding-bottom: 20px;
 }
 
 #product .tags_heading{
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product .tags_heading:hover{
+    background-color: #00B207;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+}
+
+#product .tags_heading:hover h4{
+    color: #FFFFFF;
+}
+
+#product .tags_heading:hover h4 span{
+    color: #FFFFFF;
 }
 
 #product .tags_heading h4{
-    padding-right: 10px;
+    width: 100%;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
-    line-height: 150%;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
 }
 
 #product .tags_heading h4 span{
-    padding-left: 67px;
+    padding-left: 0px;
     color: var(--gray-scale-gray--900);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+#product .tags_heading.active h4 span{
+    transform: rotate(180deg);
 }
 
 #product .tag_option{
-    padding: 10px;
+  display: none;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 10px;
 }
 
-#product .tags .tag_option span{ 
+#product .tag_option.show{
+    display: block;
+}
+
+#product .tag_option span{ 
     display: inline-block; 
     font-family: var(--font-family);
     font-weight: 400;
@@ -844,18 +966,18 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-#product .tags .tag_option span:hover{
+#product .tag_option span:hover{
     background-color: #00B207;
     color: #fff;
 }
 
-.discount-banner{ 
+#product .discount-banner{ 
     padding-top: 20px;
     border-radius: 10px;
     width: 240px;
     height: 245px;
 }
-.discount-banner h4{ 
+#product .discount-banner h4{ 
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 22px;
@@ -864,14 +986,14 @@ input::-webkit-inner-spin-button {
     color: var(--branding-warning);
 }
 
-.discount-banner h4 span{ 
+#product .discount-banner h4 span{ 
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     color: var(--gray-scale-gray--900);
 }
 
-.discount-banner p{ 
+#product .discount-banner p{ 
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -880,7 +1002,7 @@ input::-webkit-inner-spin-button {
     color: var(--gray-scale-gray--700);
 }
 
-.discount-banner .btn{
+#product .discount-banner .btn{
     transform: translateY(-20%);
     transform: translateX(50%);
     background:transparent;
@@ -889,12 +1011,12 @@ input::-webkit-inner-spin-button {
     padding: 5px;
 }
 
-.discount-banner .btn:hover{
+#product .discount-banner .btn:hover{
     background-color: #fff;
     border: 1px solid #00B207;
 }
 
-.discount-banner button { 
+#product .discount-banner button { 
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
@@ -908,14 +1030,14 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.discount-banner button span{
+#product .discount-banner button span{
     padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sale-products h3{
+#product .sale-products h3{
     padding-top: 20px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -924,26 +1046,28 @@ input::-webkit-inner-spin-button {
     color: var(--gray-scale-gray--900);
 }
 
-.sidebar .sale-products .row{  
+#product .sidebar .sale-products .row{  
     align-items: center; 
     border: 1px solid var(--gray-scale-gray--100);
     border-radius: 6px;
 }
 
-.sidebar .sale-products .row:hover{
+#product .sidebar .sale-products .row:hover{
     border: 1px solid #00B207;
 }
 
 
-.sidebar .sale-products .row .info p{ 
+#product .sidebar .sale-products .row .info p{ 
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: var(--gray-scale-gray--700);
+    color: var(--branding-success-dark);
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.sale-products .info span{ 
+#product .sidebar .sale-products .info span{ 
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -951,16 +1075,25 @@ input::-webkit-inner-spin-button {
     color: var(--gray-scale-gray--900);
 }
 
-.sale-products .info span del{
+#product .sidebar .sale-products .info span del{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    text-decoration: line-through;
     color: var(--gray-scale-gray--400);
 }
 
-.sale-products s{ 
-    color: #999; 
+#product .sale-products .info .icons span{ 
+    color: #FF8A00;
+}
+
+#product .sale-products .info .icons .star{
+    color: #CCCCCC;
+}
+
+#product .sale-products .info .icons{
+    padding: 5px 0;
 }
 
 #product .top-bar{
@@ -1214,7 +1347,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     text-align: center; 
     margin: 50px 0px;
-    width: 190px;
+    width: 40%;
     height: 36px;
 }
 

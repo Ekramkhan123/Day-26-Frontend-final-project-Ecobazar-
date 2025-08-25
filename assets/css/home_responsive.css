@@ -59,7 +59,7 @@
     .offcanvas-header img{
         background-color: rgba(245, 245, 245, 0.408);
         padding: 10px;
-        border-radius: 10%;
+        border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
     }
 
@@ -374,7 +374,7 @@
     }
 
     #video .play .icon2{
-        display: block;
+        display: flex;
     }
 
     #video .play h4{
