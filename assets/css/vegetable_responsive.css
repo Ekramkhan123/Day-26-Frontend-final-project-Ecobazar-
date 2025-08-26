@@ -228,7 +228,12 @@
         }
 
         #product .progress_bar .inputs input{
-            width: 45px !important;
+            width: 30px !important;
+            font-size: 12px !important;
+        }
+
+        #product .progress_bar .inputs label{
+            font-size: 12px !important;
         }
         
 

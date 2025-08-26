@@ -188,6 +188,7 @@
 
         #details_product .container .row .details_content .price input{
             font-size: 20px !important;
+            width: 95px !important;
         }
 
         #details_product .container .row .details_content .social{

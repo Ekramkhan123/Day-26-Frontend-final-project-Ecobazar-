@@ -760,6 +760,7 @@ header .first_heading_02 .sign a{
     text-decoration: none;
     border: none;
     background: transparent;
+    font-size: 14px;
 }
 
 #product .progress_bar .inputs input:focus {
