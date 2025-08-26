@@ -11,6 +11,43 @@ $(function(){
         mobileSearchscreen.classList.remove("search_active");
     })
 
+    let incrementBtn = document.querySelector(".inc");
+    let decrementBtn = document.querySelector(".dec");
+    let amount = document.querySelector(".amount");
+    let result = document.querySelector(".result");
+
+    incrementBtn.addEventListener("click", function () {
+
+  if (Number(result.value) + 1 < 11) { 
+    result.value = Number(result.value) + 1;
+    amount.value = (result.value)*17.28;
+
+    decrementBtn.style.cursor = "pointer";
+
+  }else{
+    
+    incrementBtn.style.cursor = "not-allowed";
+  }
+
+});
+
+
+decrementBtn.addEventListener('click', function(){
+    
+  if( Number(result.value) > 1){
+   
+    result.value =  Number(result.value) - 1;
+    amount.value = (amount.value)-17.28;
+
+    incrementBtn.style.cursor = "pointer";
+
+  }else{
+
+    decrementBtn.style.cursor = "not-allowed";
+  }
+
+});
+
     $('.slider-for').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
