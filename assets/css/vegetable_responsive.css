@@ -224,6 +224,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+        }
+
+        #product .progress_bar .inputs input{
+            width: 45px !important;
         }
         
 
