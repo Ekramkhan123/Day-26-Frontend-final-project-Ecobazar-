@@ -220,10 +220,12 @@
         }
 
         #product .progress_bar .inputs{
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        
 
         #product .filter_bar .sidebar .rating_heading{
             width: 100%;
