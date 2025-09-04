@@ -100,6 +100,38 @@
         padding: 10px;
     }
 
+        .offcanvas .wish_icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .offcanvas .wish_icons a{
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(245, 245, 245, 0.408);
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+            padding: 10px;
+        }
+
+        .offcanvas .wish_icons a:hover{            
+            transform: scale(1.1);
+        }
+
+        .offcanvas .wish_icons a:hover .wish{
+            color: #00B207;
+        }
+
+        .offcanvas .wish_icons a .wish{
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     #banner .container {
         z-index: -23 !important;
         height: 100%;
