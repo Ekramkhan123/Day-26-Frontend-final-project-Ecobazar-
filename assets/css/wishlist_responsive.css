@@ -217,7 +217,7 @@
         }
 
         #wishlist .row .Price h4{
-            padding-top: 20px;
+            padding-top: 60px;
             font-size: 12px !important;
         }
 
@@ -231,7 +231,7 @@
         }
 
         #wishlist .row .stock .btn{
-            margin-bottom: 90px;
+            margin-bottom: 20px;
             width: 60px !important;
             height: 25px !important;
         }
@@ -245,7 +245,7 @@
         }
 
         #wishlist .row .out-stock .btn{
-            margin-bottom: 90px;
+            margin-bottom: 20px;
             width: 80px !important;
             height: 25px !important;
         }
