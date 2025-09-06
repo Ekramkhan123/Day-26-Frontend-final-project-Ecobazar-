@@ -143,8 +143,10 @@
         }
 
         #heading_page .breadcrumb {
-            padding-left: 40px;
-            padding-top: 20px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
         }
 
         #heading_page .breadcrumb a{

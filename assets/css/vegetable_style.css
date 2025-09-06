@@ -481,6 +481,10 @@ header .first_heading_02 .sign a{
     border-bottom: 1px solid #ddd;
 }
 
+#heading_page .breadcrumb{
+    padding-top: 20px;
+}
+
 #heading_page .breadcrumb a{
     font-family: var(--font-family);
     font-weight: 400;
