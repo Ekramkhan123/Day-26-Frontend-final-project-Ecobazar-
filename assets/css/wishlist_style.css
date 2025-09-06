@@ -662,6 +662,10 @@ header .first_heading_02 .sign a{
     cursor: pointer;
 }
 
+#wishlist .row .cart .add_cart:hover{
+    background-color: #2C742F;
+}
+
 #wishlist .row .cart .add_cart a{
     display: flex;
     justify-content: center;
@@ -697,6 +701,10 @@ header .first_heading_02 .sign a{
     cursor: not-allowed;
 }
 
+#wishlist .row .cart .add_cart_off:hover{
+    background: var(--branding-error);
+}
+
 #wishlist .row .cart .cross{
     padding-left: 20px;
     cursor: pointer;
@@ -711,6 +719,11 @@ header .first_heading_02 .sign a{
     align-items: center;
     color: var(--gray-scale-gray--500);
     cursor: pointer;
+}
+
+#wishlist .row .cart .cross span:hover{
+    background: var(--branding-success);
+    color: #FFFFFF;
 }
 
 #wishlist .container .row .social_media{
