@@ -182,9 +182,13 @@
             font-size: 20px !important;
         }
 
-        #wishlist  .info{
+        #wishlist .row .info{
             width: 33%;
             padding-top: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
         #wishlist .row{
@@ -219,6 +223,9 @@
         #wishlist .row .Price{
             width: 33%;
             display: block !important;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
@@ -234,6 +241,9 @@
 
         #wishlist .row .stock{
             width: 33%;
+            justify-content: center !important;
+            align-items: center;
+            text-align: center;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
@@ -250,6 +260,9 @@
 
         #wishlist .row .out-stock{
             width: 33%;
+            justify-content: center !important;
+            align-items: center;
+            text-align: center;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
@@ -266,8 +279,6 @@
 
         #wishlist .row .cart{
             padding-top: 20px;
-            border-top: 1px solid var(--gray-scale-gray--100);
-            border-bottom: 1px solid var(--gray-scale-gray--100);
             width: 100%;
             justify-content: center !important;
             align-items: center !important;
