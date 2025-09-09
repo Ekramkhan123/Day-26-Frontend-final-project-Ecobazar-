@@ -277,7 +277,28 @@
     }
 
     #product .filter .details{
-        padding-right: 0px;
+        padding: 10px;
+    }
+
+    #product .filter .details h4{
+        width: 150%;
+        font-size: 13px;
+    }
+
+    #product .filter .details b{
+        font-size: 12px;
+    }
+
+    #product .filter .details del{
+        font-size: 12px;
+    }
+
+    #product .filter .details .icons{
+        width: 110%;
+    }
+
+    #product .filter .add_to_cart{
+        transform: translate(12px ,20px) !important;
     }
 
     #items_shop{

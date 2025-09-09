@@ -436,7 +436,7 @@
         }
 
         #product .product_part .filter .details h4{
-            width: 160%;
+            width: 150%;
             font-size: 13px;
         }
 
@@ -449,12 +449,11 @@
         }
 
         #product .product_part .icons{
-            width: 120%;
+            width: 100%;
         }
 
         #product .filter .add_to_cart{
-            margin-top: 30px;
-            transform: translateX(20px);
+            transform: translate(8px ,20px) !important;
         }
 
         #product .product_part .pagination{
