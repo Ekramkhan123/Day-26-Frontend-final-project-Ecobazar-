@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/image/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/shopping_cart_responsive.css">
     <link rel="stylesheet" href="./assets/css/shopping_cart_style.css">
+    <link rel="stylesheet" href="./assets/css/shopping_cart_responsive.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/slick.min.css">
 
@@ -252,11 +252,123 @@
 
     <section id="shopping_cart">
         <div class="container">
+            <div class="heading">
+                <h4>My Shopping Cart</h4>
+            </div>
             <div class="row">
-                <div class="col-xl-8 product">
-
+                <div class="col-xl-8 shop_product">
+                    <div class="row">
+                        <div class="col-xl-4 info">
+                            <h4>Product</h4>
+                        </div>
+                        <div class="col-xl-2 info">
+                            <h4>Price</h4>
+                        </div>
+                        <div class="col-xl-3 info">
+                            <h4>Quantity</h4>
+                        </div>
+                        <div class="col-xl-3 info">
+                            <h4>subtotal</h4>
+                        </div>
+                        <hr>
+                        <div class="col-xl-4 product">
+                            <div class="img-fluid image">
+                                <img src="./assets/image/wishlist, shoppingcart, checkout/product 1.png" alt="">
+                            </div>
+                            <h4>Green Capsicum</h4>
+                        </div>
+                        <div class="col-xl-2 Price">
+                            <h4>$14.00</h4>
+                        </div>
+                        <div class="col-xl-3 add d-flex">
+                            <div class="button">
+                                <button class="dec"><iconify-icon icon="line-md:minus" width="14" height="14"></iconify-icon></button>
+                                <input class="result" type="number" value="1">
+                                <button class="inc"><iconify-icon icon="line-md:plus" width="14" height="14"></iconify-icon></button>
+                            </div> 
+                        </div>
+                        <div class="col-xl-3 subtotal">
+                            <h4>$<span><input class="amount" type="number" value="14"></span></h4>
+                            
+                            <div class="cross">
+                                <span><iconify-icon icon="akar-icons:cross" width="18" height="18"></iconify-icon></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-xl-4 product">
+                            <div class="img-fluid image">
+                                <img src="./assets/image/wishlist, shoppingcart, checkout/product 4.png" alt="">
+                            </div>
+                            <h4>Red Capsicum</h4>
+                        </div>
+                        <div class="col-xl-2 Price">
+                            <h4>$14.00</h4>
+                        </div>
+                        <div class="col-xl-3 add d-flex">
+                            <div class="button">
+                                <button class="dec1"><iconify-icon icon="line-md:minus" width="14" height="14"></iconify-icon></button>
+                                <input class="result1" type="number" value="1">
+                                <button class="inc1"><iconify-icon icon="line-md:plus" width="14" height="14"></iconify-icon></button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 subtotal">
+                            <h4>$<span><input class="amount1" type="number" value="14"></span></h4>
+                            <div class="cross">
+                                <span><iconify-icon icon="akar-icons:cross" width="18" height="18"></iconify-icon></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-xl-6 return">
+                            <div class="return_shop">
+                                <a href="">Return to shop</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 update">
+                            <div class="update_cart">
+                                <a href="">Update cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xl-3 coupon">
+                            <h4>Coupon Code</h4>
+                        </div>
+                        <div class="col-xl-9 input d-flex">
+                            <input type="text" placeholder="Enter code">
+                            <div class="apply_coupon">
+                                <a href="">Apply Coupon</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-4 cart-total">
+
+                <div class="col-xl-3 cart-total">
+                    <div class="heading">
+                        <h4>Cart Total</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 info1">
+                            <h4>Subtotal:</h4>
+                        </div>
+                        <div class="col-xl-3 total">
+                            <h4>$</h4>
+                            <input class="total_amount" type="number" value="00">
+                        </div>
+                        <div class="col-xl-9 info1">
+                            <h4>Shipping:</h4>
+                        </div>
+                        <div class="col-xl-3 total">
+                            <h4>Free</h4>
+                        </div>
+                        <div class="col-xl-9 info_total">
+                            <h4>Total:</h4>
+                        </div>
+                        <div class="col-xl-3 amount_total">
+                            <h4>$</h4>
+                            <input class="all_amount" type="number" value="00">
+                        </div>
+                    </div>
                     <a href="./checkout_index.html">
                         <div class="btn">
                             <h4>Proceed to Checkout</h4>
