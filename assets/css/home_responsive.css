@@ -274,6 +274,7 @@
 
     #product .filter{
         width: 50%;
+        padding: 5px;
     }
 
     #product .filter .details{
