@@ -638,6 +638,11 @@ header .first_heading_02 .sign a{
     font-size: 24px;
     line-height: 150%;
     color: var(--branding-success-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 5px;
 }
 
 #details_product .container .row .details_content .price h4{

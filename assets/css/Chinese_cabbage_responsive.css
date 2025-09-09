@@ -216,9 +216,11 @@
             font-size: 20px;
         }
 
-        #details_product .container .row .details_content .price input{
+        #details_product .container .row .details_content .price .amount{
             font-size: 20px;
             width: 95px;
+            justify-content: start;
+            align-items: center;
         }
 
         #details_product .container .row .details_content .social{
@@ -252,6 +254,7 @@
 
         #details_product .container .row .details_content .add_cart .add{
             width: 35%;
+            height: 37px;
             display: flex;
             justify-content: center;
             align-items: center;
