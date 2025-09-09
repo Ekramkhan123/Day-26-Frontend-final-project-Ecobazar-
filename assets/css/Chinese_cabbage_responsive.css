@@ -142,26 +142,24 @@
         }
 
         #heading_page .breadcrumb {
-            padding-left: 0px;
-            padding-top: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #heading_page .breadcrumb a{
-            font-size: 12px;
+            display: flex ;
+            justify-content: center ;
+            align-items: center ;
+            text-align: center;
+            padding-top: 20px !important;
+            padding-bottom: 0px !important;
         }
 
         #heading_page .breadcrumb span{
-            font-size: 12px;
+            padding-top: 5px;
         }
 
         #heading_page .breadcrumb h4{
-            font-size: 12px;
+            padding-top: 5px;
         }
 
         #details_product .slider-for .single_item{
-            display: flex !important;
+            display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -171,7 +169,7 @@
         .magnifier{
             left: 50% !important;
             transform: translateX(-50%);
-            border: 1px solid #00B207 !important;
+            border: 1px solid #00B207;
             box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
             border-radius: 8px;
         }
@@ -186,8 +184,8 @@
         }
 
         #details_product .container .row .details_content h4{
-            font-size: 24px !important;
-            justify-content: center !important;
+            font-size: 24px;
+            justify-content: center;
         }
 
         #details_product .container .row .details_content p{
@@ -198,29 +196,29 @@
         }
 
         #details_product .container .row .details_content .icons{
-            justify-content: center !important;
+            justify-content: center;
         }
 
         #details_product .container .row .details_content .icons h4{
-            font-size: 12px !important;
+            font-size: 12px;
         }
 
         #details_product .container .row .details_content .price{
             width: 100%;
-            justify-content: center !important;
+            justify-content: center;
         }
 
         #details_product .container .row .details_content .price del{
-            font-size: 20px !important;
+            font-size: 20px;
         }
 
         #details_product .container .row .details_content .price h4{
-            font-size: 20px !important;
+            font-size: 20px;
         }
 
         #details_product .container .row .details_content .price input{
-            font-size: 20px !important;
-            width: 95px !important;
+            font-size: 20px;
+            width: 95px;
         }
 
         #details_product .container .row .details_content .social{
@@ -237,12 +235,12 @@
         #details_product .container .row .details_content .social .social_media{
             width: 100%;
             display: flex;
-            justify-content: center !important;
+            justify-content: center;
             align-items: center;
         }
 
         #details_product .container .row .details_content .social .social_media h4{
-            font-size: 12px !important;
+            font-size: 12px;
         }
 
         #details_product .container .row .details_content .add_cart{
@@ -253,16 +251,16 @@
         }
 
         #details_product .container .row .details_content .add_cart .add{
-            width: 35% !important;
+            width: 35%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5px !important;
+            padding: 5px;
         }
 
         #details_product .container .row .details_content .add_cart .add button{
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             padding: 10px;
         }
 
@@ -274,12 +272,12 @@
         }
 
         #details_product .container .row .details_content .add_cart .btn a{
-            padding: 15px 20px !important;
-            font-size: 12px !important;
+            padding: 15px 20px;
+            font-size: 12px;
         }
 
         #details_product .container .row .details_content .add_cart .btn a span{
-            padding-left: 5px !important;
+            padding-left: 5px;
         }
 
         #details_product .container .row .details_content .add_cart .btn a .icon1{
@@ -287,11 +285,11 @@
         }
 
         #details_product .container .row .details_content .add_cart .btn .icon2{
-            display: unset !important;
+            display: unset;
         }
 
         #details_product .container .row .details_content .add_cart .Wish{
-            width: 10% !important;
+            width: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -299,19 +297,19 @@
 
         #details_product .container .row .details_content .tags{
             width: 100%;
-            justify-content: center !important;
+            justify-content: center;
         }
 
         #details_product .container .row .details_content .tags h4{
-            font-size: 12px !important;
+            font-size: 12px;
         }
 
         #details_product .container .row .details_content .tags h4 span{
-            font-size: 11px !important;
+            font-size: 11px;
         }
 
         #details_product .container .row .details_content .tags h4 span a{
-            font-size: 11px !important;
+            font-size: 11px;
         }
 
         #information .container .info_btns button{
@@ -324,6 +322,25 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            font-size: 12px;
+        }
+
+        #information .info p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #information .info p .tick{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #information .info p .heading{
+            padding-left: 5px;
+            font-size: 11px;
         }
 
         #information .container .filter{
@@ -379,7 +396,7 @@
         }
 
         #information .info3 .row .btn {
-            transform: translateX(60%);
+            transform: translateX(70%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -397,8 +414,8 @@
         }
         
         #subcribe{
-            padding-top: 10px !important;
-            padding-bottom: 10px !important;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         #subcribe .container{
@@ -410,6 +427,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+
+        #subcribe .col-xl-4 h4{
+            font-size: 20px;
         }
 
         #subcribe .col-xl-5{
@@ -458,8 +479,7 @@
         }
 
         #footer .container{
-            width: 140%;
-            transform: translateX(-14%);
+            width: 98%;
         }
 
 
@@ -534,11 +554,11 @@
 
         #footer .title{
             text-align: center;
-            padding: 20px 10px 10px 20px !important;
+            padding: 20px 10px 10px 20px;
         }
 
         #footer .payment_method .img{
-            padding: 10px 20px 10px 20px !important;
+            padding: 10px 20px 10px 20px;
             justify-content: center;
             align-items: center;
             text-align: center;

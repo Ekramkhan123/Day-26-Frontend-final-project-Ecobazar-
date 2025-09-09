@@ -100,37 +100,37 @@
         padding: 10px;
     }
 
-        .offcanvas .wish_icons{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 20px;
-        }
+    .offcanvas .wish_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
 
-        .offcanvas .wish_icons a{
-            text-decoration: none;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(245, 245, 245, 0.408);
-            border-radius: 50%;
-            box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
-            padding: 10px;
-        }
+    .offcanvas .wish_icons a{
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(245, 245, 245, 0.408);
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.23) 10px 4px 12px;
+        padding: 10px;
+    }
 
-        .offcanvas .wish_icons a:hover{            
-            transform: scale(1.1);
-        }
+    .offcanvas .wish_icons a:hover{            
+        transform: scale(1.1);
+    }
 
-        .offcanvas .wish_icons a:hover .wish{
-            color: #00B207;
-        }
+    .offcanvas .wish_icons a:hover .wish{
+        color: #00B207;
+    }
 
-        .offcanvas .wish_icons a .wish{
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .offcanvas .wish_icons a .wish{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     #banner .container {
         z-index: -23 !important;
@@ -147,7 +147,7 @@
     }
 
     #banner .offer h3{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     #banner .offer p{
@@ -159,11 +159,19 @@
     }
 
     #banner .contains h2{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #banner .contains p{
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    #banner .contains h3{
+        font-size: 24px;
+    }
+
+    #banner .contains h3 span{
+        font-size: 24px;
     }
 
     #banner .contains a{
@@ -363,8 +371,7 @@
     }
 
     #product_slider .heading h4{
-    font-weight: 600;
-    font-size: 28px;
+    font-size: 22px;
     }
 
     #video{
@@ -586,7 +593,7 @@
     }
 
     #footer .payment_method .img{
-    padding: 10px;
+        padding: 10px;
     }
 
 }

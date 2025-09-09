@@ -219,14 +219,14 @@
 
         #shopping_cart .row .shop_product .add{
             width: 25%;
-            padding: 5px 10px;
-            padding-bottom: 150px !important;
+            padding-bottom: 90px !important;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
         #shopping_cart .row .shop_product .row .add .button{
             width: 85px;
-            height: 30px ;
+            height: 30px;
+            transform: translateX(-9px);
         }
 
         #shopping_cart .row .shop_product .row .add .button button{
@@ -244,7 +244,7 @@
         #shopping_cart .row .subtotal{
             display: unset !important;
             width: 25%;
-            padding: 15px 0px 120px 10px !important;
+            padding: 15px 0px 120px 10px;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
 
@@ -425,6 +425,10 @@
             text-align: center;
         }
 
+        #subcribe .col-xl-4 h4{
+            font-size: 20px;
+        }
+
         #subcribe .col-xl-5{
             padding: 30px;
             width: 100%;
@@ -464,7 +468,6 @@
             text-align: center;
         }
         
-
         #footer{
             width: 100%;
             height: 100%;
@@ -472,10 +475,8 @@
         }
 
         #footer .container{
-            width: 140%;
-            transform: translateX(-14%);
+            width: 98%;
         }
-
 
         #footer .container .col-xl-4 h4{
             font-size: 16px;
@@ -548,11 +549,11 @@
 
         #footer .title{
             text-align: center;
-            padding: 20px 10px 10px 20px !important;
+            padding: 20px 10px 10px 20px;
         }
 
         #footer .payment_method .img{
-            padding: 10px 20px 10px 20px !important;
+            padding: 10px 20px 10px 20px;
             justify-content: center;
             align-items: center;
             text-align: center;

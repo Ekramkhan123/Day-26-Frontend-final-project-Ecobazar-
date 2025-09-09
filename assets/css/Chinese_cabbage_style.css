@@ -903,17 +903,12 @@ header .first_heading_02 .sign a{
 }
 
 #information .info p{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--gray-scale-gray--500);
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-#information .info p span{
+#information .info p .tick{
     border-radius: 50%;
     background-color: #00B207;
     color: #fff;
@@ -923,7 +918,15 @@ header .first_heading_02 .sign a{
     text-align: center;
     width: 20px;
     height: 20px;
-    padding: 4px;
+}
+
+#information .info p .heading{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray--500);
+    padding-left: 15px;
 }
 
 #information .video{
